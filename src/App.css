@@ -1,0 +1,58 @@
+input[type="text"],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.contact-form {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.portfolio-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  gap: 15px;
+}
+.portfolio-item {
+  width: 48%;
+  height: 200px;
+  border: 1px solid black;
+  padding: 5px;
+}
+.portfolio-item p {
+  line-height: 22px;
+  margin-top: 15px;
+}
+.portfolio-item a {
+  text-decoration: none;
+  background-color: #45a049;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+}

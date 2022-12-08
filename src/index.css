@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: rgb(201, 125, 96);
+  height: 100px;
+  color: white;
+  display: flex;
+  padding: 10px 30px;
+  align-items: center;
+}
+.header h1 {
+  font-size: 40px;
+  width: 40%;
+}
+.navigation-container {
+  width: 60%;
+  transition: all 2s ease-in;
+}
+.navigation-container nav {
+  width: 100%;
+}
+.navigation-container ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.navigation-container ul li {
+  font-size: 22px;
+}
+.navigation-container a {
+  text-decoration: none;
+  color: white;
+}
+.navigation-container a:hover,
+.active {
+  text-decoration: underline;
+  color: black;
+}
+.page {
+  padding: 15px 45px;
+  background-color: #f2e5d7;
+  min-height: 75vh;
+}
+footer {
+  background-color: rgb(201, 125, 96);
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+footer a {
+  color: white;
+  font-size: 40px;
+}
+.mobile-navigation {
+  display: none;
+}
+.menu-icon {
+  display: none;
+}
+.menu-icon:hover {
+  cursor: pointer;
+}
+.mobile-navigation {
+}
+.about {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 100px;
+  flex-wrap: wrap;
+}
+.profile-img,
+.profile-txt {
+  width: 48%;
+}
+.profile-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+/*reponsive */
+@media (max-width: 900px) {
+  .navigation-container {
+    display: none;
+  }
+  .mobile-navigation {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    position: absolute;
+    background-color: green;
+    right: 0;
+    top: 100px;
+    height: 100vh;
+    padding-right: 20px;
+    padding-left: 15px;
+    /* padding-top: 10px; */
+    align-items: center;
+  }
+  .header {
+    justify-content: space-between;
+  }
+  .menu-icon {
+    /* align-self: flex-end; */
+    font-size: 30px;
+    display: block;
+  }
+  .mobile-navigation nav {
+    /* align-self: flex-end; */
+  }
+  .mobile-navigation ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  .mobile-navigation ul li {
+    padding: 10px;
+  }
+  .mobile-navigation li a {
+    font-size: 24px;
+    text-decoration: none;
+  }
+  .active {
+    background-color: whitesmoke;
+    padding: 10px;
+  }
+  .about {
+    padding: 5px 5px;
+  }
+  .profile-img,
+  .profile-txt {
+    width: 100%;
+  }
+}
